@@ -1,5 +1,6 @@
 #!/bin/bash
-#Actualiza imagen                        
+#Actualiza imagen   
+                     
                         cd /home/pi
                         sudo rm -R B108
                         sudo rm -R C108
