@@ -3,7 +3,7 @@ clear
 while true
 do
 clear
-#lxterminal --geometry=125x30 -e less /opt/YSFGateway/YSFGateway/YSFHosts.txt &
+#lxterminal --geometry=125x30 -e less /home/pi/YSFClients/YSFGateway/YSFHosts.txt &
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
 #Colores
@@ -128,7 +128,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -157,7 +157,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "5c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "5c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "1c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "1c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -218,7 +218,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -248,7 +248,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "6c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "6c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "2c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "2c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -309,7 +309,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -339,7 +339,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "7c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "7c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "3c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "3c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -400,7 +400,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -430,7 +430,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "8c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "8c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "4c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "4c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -491,7 +491,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -521,7 +521,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "9c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "9c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "5c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "5c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -582,7 +582,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -612,7 +612,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "10c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "10c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "6c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "6c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -673,7 +673,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -703,7 +703,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "11c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "11c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "7c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "7c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -764,7 +764,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -794,7 +794,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "12c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "12c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "8c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "8c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -855,7 +855,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -885,7 +885,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "13c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "13c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "9c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "9c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -946,7 +946,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -976,7 +976,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "14c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "14c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "10c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "10c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1037,7 +1037,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -1067,7 +1067,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "15c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "15c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "11c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "11c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1128,7 +1128,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -1158,7 +1158,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "16c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "16c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "12c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "12c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1219,7 +1219,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -1249,7 +1249,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "17c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "17c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "13c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "13c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1310,7 +1310,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -1340,7 +1340,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "18c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "18c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "14c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "14c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1401,7 +1401,7 @@ do
                           [sS]* ) echo ""
                           
 
-sala=`grep "$NUMERO_SALA" /opt/YSFGateway/YSFGateway/YSFHosts.txt`
+sala=`grep "$NUMERO_SALA" /home/pi/YSFClients/YSFGateway/YSFHosts.txt`
 sed 's/ /_/g' /home/pi/.local/sala.txt
 sala1=`echo "$sala" | tr -d '[[:space:]]'`
 clear
@@ -1431,7 +1431,7 @@ if [ $NUMERO_SALA = $numero_sala ]
                         nombre_sala=$(awk -F';' '{print $2}' /home/pi/.local/sala.txt)
                                                                                                                    
                         listsala=$tg";"$numero_sala
-                        sudo sed -i "19c $listsala" /opt/MMDVM_CM/DMR2YSF/TG-YSFList.txt
+                        sudo sed -i "19c $listsala" /home/pi/DMR2YSF/TG-YSFList.txt
                         sudo sed -i "15c $tg" /home/pi/.local/tg_ysf.txt
                         sudo sed -i "15c $nombre_sala" /home/pi/.local/nombre_salas_ysf.txt
 
@@ -1480,7 +1480,7 @@ do
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-                          sudo geany /opt/YSFGateway/YSFGateway/YSFHosts.txt &
+                          sudo geany /home/pi/YSFClients/YSFGateway/YSFHosts.txt &
                           break;;
                           [nN]* ) echo ""
                           break;;
