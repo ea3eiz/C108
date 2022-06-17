@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/pi/DMR2YSF/
-xterm -geometry 77x12+650+500 -bg black -fg white -fa 'Verdana' -fs 9x -T DMR2YSF -e ./DMR2YSF DMR2YSF.ini &
+xterm -geometry 77x8+650+500 -bg black -fg white -fa 'Verdana' -fs 9x -T DMR2YSF -e ./DMR2YSF DMR2YSF.ini &
 sleep 2
 
 cd /home/pi/YSFClients/YSFGateway/
