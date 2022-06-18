@@ -67,11 +67,19 @@ cd /home/pi/DMR2NXDN
 xterm -geometry 88x11+1272+420 -bg black -fg white -fa 'Verdana' -fs 9x -T DMR2NXDN -e ./DMR2NXDN DMR2NXDN.ini &
 
 cd /home/pi/MMDVMHost
-sudo ./DMR2NXDN MMDVMDMR2NXDN.ini &
+#sudo ./DMR2NXDN MMDVMDMR2NXDN.ini &
+
+xterm -geometry 77x9+1276+798 -bg black -fg white -fa ‘verdana’ -fs 9x -T MMDVMDMR2YSF -e sudo ./DMR2NXDN MMDVMDMR2NXDN.ini &
+
 
 
 cd /home/pi/NXDNClients/NXDNGateway
 xterm -geometry 88x12+1272+136 -bg black -fg white -fa 'Verdana' -fs 9x -T NXDNGateway -e ./NXDNGateway NXDNGateway.ini
+
+
+
+
+
 
 #cd /home/pi/Desktop
 #sudo cp Abrir_DMR2NXDN.desktop /home/pi
