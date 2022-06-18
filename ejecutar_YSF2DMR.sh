@@ -5,4 +5,5 @@ xterm -geometry 77x7+650+662 -bg black -fg white -fa 'Verdana' -fs 9x -T YSF2DMR
 sleep 2
 cd /home/pi/MMDVMHost
 
-sudo ./MMDVMFUSION MMDVMFUSION.ini
+#sudo ./MMDVMFUSION MMDVMFUSION.ini
+xterm -geometry 77x9+650+798 -bg black -fg white -fa ‘verdana’ -fs 9x -T MMDVMFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
