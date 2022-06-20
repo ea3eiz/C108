@@ -7,7 +7,7 @@ sudo xterm -geometry 77x9+1276+798 -bg black -fg white -fa 'Verdana' -fs 9x -T M
 
 
 cd /home/pi/DMR2M17
-sudo xterm -geometry 77x5+1276+260 -bg black -fg white -fa 'Verdana' -fs 9x -T DMR2M17 -e ./DMR2M17 DMR2M17.ini
+sudo xterm -geometry 77x5+1276+260 -bg black -fg white -fa 'Verdana' -fs 9x -T DMR2M17 -e ./DMR2M17 DMR2M17.ini &
 
 
 
