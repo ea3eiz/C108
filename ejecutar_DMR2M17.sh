@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/pi/MMDVMHost
-sudo xterm -geometry 77x9+1276+798 -bg black -fg white -fa 'Verdana' -fs 9x -T MMTVMDMR2M17 -e sudo ./MMDVMDMR2M17 MMDVMDMR2M17.ini
+sudo xterm -geometry 77x9+1276+798 -bg black -fg white -fa 'Verdana' -fs 9x -T MMTVMDMR2M17 -e sudo ./MMDVMDMR2M17 MMDVMDMR2M17.ini &
 
 
 
