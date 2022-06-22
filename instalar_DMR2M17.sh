@@ -737,8 +737,9 @@ clear
                                 ejecutar1=S
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
-sudo rm -R md380_vocoder                              
+                             
                                 cd /home/pi/
+                                sudo rm -R md380_vocoder 
                                 git clone https://github.com/nostar/md380_vocoder
                                 sleep 1
                                 cd /home/pi/md380_vocoder
@@ -746,6 +747,7 @@ sudo rm -R md380_vocoder
                                 sudo make install
 echo "parada para sudo make install"
 read a
+cd /home/pi/
 sudo rm -R DMR2M17                                
                                 cp -R /home/pi/B108/DMR2M17 /home/pi
                                 sleep 1
@@ -756,12 +758,12 @@ sudo rm -R DMR2M17
 echo "parada para sudo make install"
 read a
                                 # Crea el ejecutable DMR2M17
-                                cd /home/pi/MMDVMHost
-                                cp DMR2YSF MMDVMDMR2M17
-
-                                # Crea el ejecutable DMR2M17.ini
-                                cd /home/pi/MMDVMHost
-                                cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
+                                #cd /home/pi/MMDVMHost
+                                #cp DMR2YSF MMDVMDMR2M17
+#
+                                ## Crea el ejecutable DMR2M17.ini
+                                #cd /home/pi/MMDVMHost
+                                #cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
 
                                 #cp /home/pi/B108/ABRIR_DMR2M17.desktop /home/pi/Desktop
                                 #cp /home/pi/B108/Editar_DMR2M17.desktop /home/pi/Desktop
