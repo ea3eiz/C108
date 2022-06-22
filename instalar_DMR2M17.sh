@@ -758,12 +758,12 @@ sudo rm -R DMR2M17
 echo "parada para sudo make install"
 read a
                                 # Crea el ejecutable DMR2M17
-                                #cd /home/pi/MMDVMHost
-                                #cp DMR2YSF MMDVMDMR2M17
+                                cd /home/pi/MMDVMHost
+                                cp DMR2YSF MMDVMDMR2M17
 #
                                 ## Crea el ejecutable DMR2M17.ini
-                                #cd /home/pi/MMDVMHost
-                                #cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
+                                cd /home/pi/MMDVMHost
+                                cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
 
                                 #cp /home/pi/B108/ABRIR_DMR2M17.desktop /home/pi/Desktop
                                 #cp /home/pi/B108/Editar_DMR2M17.desktop /home/pi/Desktop
