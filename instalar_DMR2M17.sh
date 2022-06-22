@@ -744,7 +744,8 @@ clear
                                 cd /home/pi/md380_vocoder
                                 make clean all
                                 sudo make install
-
+echo "parada para sudo make install"
+read a
                                 cp -R /home/pi/B108/DMR2M17 /home/pi
                                 sleep 1
                                 cd /home/pi/DMR2M17
