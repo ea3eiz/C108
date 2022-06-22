@@ -745,12 +745,14 @@ clear
                                 make clean all
                                 sudo make install
 
-                                cp -R /home/pi/V105/DMR2M17 /home/pi
+                                cp -R /home/pi/B108/DMR2M17 /home/pi
                                 sleep 1
                                 cd /home/pi/DMR2M17
                                 make
                                 sudo make install
 
+echo "parada para sudo make install"
+read a
                                 # Crea el ejecutable DMR2M17
                                 cd /home/pi/MMDVMHost
                                 cp DMR2YSF MMDVMDMR2M17
@@ -759,10 +761,10 @@ clear
                                 cd /home/pi/MMDVMHost
                                 cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
 
-                                cp /home/pi/V105/ABRIR_DMR2M17.desktop /home/pi/Desktop
-                                cp /home/pi/V105/Editar_DMR2M17.desktop /home/pi/Desktop
+                                cp /home/pi/B108/ABRIR_DMR2M17.desktop /home/pi/Desktop
+                                cp /home/pi/B108/Editar_DMR2M17.desktop /home/pi/Desktop
 
-                                sudo cp /home/pi/V105/FONDO_ADER_V105_M17.jpg /home/pi/V105/FONDO_ADER_V105.jpg
+                                #sudo cp /home/pi/V105/FONDO_ADER_V105_M17.jpg /home/pi/V105/#FONDO_ADER_V105.jpg
 
                                 echo ""
                                 exit;
