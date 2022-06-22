@@ -737,7 +737,7 @@ clear
                                 ejecutar1=S
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
-                                                                
+sudo rm -R md380_vocoder                              
                                 cd /home/pi/
                                 git clone https://github.com/nostar/md380_vocoder
                                 sleep 1
@@ -746,6 +746,7 @@ clear
                                 sudo make install
 echo "parada para sudo make install"
 read a
+sudo rm -R DMR2M17                                
                                 cp -R /home/pi/B108/DMR2M17 /home/pi
                                 sleep 1
                                 cd /home/pi/DMR2M17
