@@ -2,7 +2,7 @@
 
 
             cd /home/pi/mvoice
-            ./mvoice
+            sudo ./mvoice
     
             #cd /home/pi/B108
             #./aviso
