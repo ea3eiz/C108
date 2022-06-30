@@ -6,12 +6,16 @@
 
 
 
-#ambe3003=$(awk "NR==24" /home/pi/status.ini)
-#if [ "$ambe3003" = 'AMBE3003=OFF' ];then
-#sudo systemctl stop AMBEServer3003 
-#else
-#sudo systemctl start AMBEServer3003 
-#fi
+dvswitch=$(awk "NR==18" /home/pi/status.ini)
+if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
+sudo systemctl stop ysfgateway.service
+sudo systemctl stop dmr2ysf.service
+sudo systemctl stop analog_bridge.service
+sudo systemctl stop ircddbgatewayd.service
+sudo systemctl stop md380-emu.service
+sudo systemctl stop mmdvm_bridge.service
+sudo systemctl stop nxdngateway.service
+fi
 
 
 
