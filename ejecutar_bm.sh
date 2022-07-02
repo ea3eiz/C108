@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo killall -9 MMDVMBM
+//sudo killall -9 MMDVMBM
 sudo sed -i "7c MMDVMBM=ON" /home/pi/status.ini
 cd /home/pi/MMDVMHost
 echo "\33[38;5;138m"
