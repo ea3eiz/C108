@@ -21,6 +21,6 @@ sleep 2
 sudo ./MMDVMBM MMDVMBM.ini
 #sudo ./MMDVMBM MMDVMBM.ini
 
-sed -i "50c BM=ON" /home/pi/status.ini
+sed -i "50c BM=OFF" /home/pi/status.ini
 
 
