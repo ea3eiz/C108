@@ -33,7 +33,7 @@
                     
 </div><!--row-->
 </div><!--container-->
-    <!-- JavaScript================================================== -->
+    <!-- JavaScript==================================================  -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
