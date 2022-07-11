@@ -23,5 +23,5 @@ clear
 echo ""
 echo ""
 echo ""
-echo "\33[1;32m                      <<<<< BORRANDO TODOS LOS LOGS >>>>>"
+echo "\33[1;32m                       <<<<< BORRANDO TODOS LOS LOGS >>>>>"
 sleep 10
