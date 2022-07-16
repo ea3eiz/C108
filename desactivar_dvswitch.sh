@@ -11,6 +11,7 @@ sudo systemctl stop ircddbgatewayd.service
 sudo systemctl stop md380-emu.service
 sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
+sleep 10
 sudo systemctl stop p25gateway.service
 
 
