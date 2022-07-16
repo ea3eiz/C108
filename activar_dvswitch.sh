@@ -16,5 +16,8 @@ sudo systemctl restart ircddbgatewayd.service
 sudo systemctl restart md380-emu.service
 sudo systemctl restart mmdvm_bridge.service
 sudo systemctl restart nxdngateway.service
+sudo systemctl restart p25gateway.service
 
+# Directorio donde están todos los servicios
+#/usr/lib/systemd/system
 
