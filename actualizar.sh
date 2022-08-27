@@ -19,7 +19,8 @@ fi
 
 sistema_bm-=$(awk "NR==1" /home/pi/selector_sistemas.ini)
 if [ "$sistema_bm" = 'BM=CHECK_ON' ];then
-sudo sed -i "4c Exec=sh -c 'cd /home/pi/B108; ./qt_OpenPanelSistemas'" /etc/xdg/autostart/Panel_Sistema.desktop
+cd /home/pi/B108
+./qt_OpenPanelSistemas
 fi
 
 # path usuario 
