@@ -17,7 +17,7 @@ sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
 fi
 
-sistema_bm-=$(awk "NR==1" /home/pi/selector_sistemas.ini)
+sistema_bm=$(awk "NR==1" /home/pi/selector_sistemas.ini)
 if [ "$sistema_bm" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelSistemas &
