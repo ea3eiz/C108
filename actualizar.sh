@@ -20,7 +20,7 @@ fi
 sistema_bm-=$(awk "NR==1" /home/pi/selector_sistemas.ini)
 if [ "$sistema_bm" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
-./qt_OpenPanelSistemas
+./qt_OpenPanelSistemas &
 fi
 
 # path usuario 
