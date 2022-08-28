@@ -17,17 +17,45 @@ sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
 fi
 
-sistema_bm=$(awk "NR==1" /home/pi/selector_sistemas.ini)
-if [ "$sistema_bm" = 'BM=CHECK_ON' ];then
+sistema1=$(awk "NR==1" /home/pi/selector_sistemas.ini)
+if [ "$sistema1" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelBM &
 fi
 
-sistema_bm=$(awk "NR==2" /home/pi/selector_sistemas.ini)
-if [ "$sistema_bm" = 'DMR=CHECK_ON' ];then
+sistema2=$(awk "NR==2" /home/pi/selector_sistemas.ini)
+if [ "$sistema2" = 'DMR=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDMRPLUS &
 fi
+
+
+sistema3=$(awk "NR==3" /home/pi/selector_sistemas.ini)
+if [ "$sistema3" = 'RADIO=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelRadio &
+fi
+
+
+
+sistema4=$(awk "NR==4" /home/pi/selector_sistemas.ini)
+if [ "$sistema4" = 'ESPECIAL=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelEspecial &
+fi
+
+sistema5=$(awk "NR==5" /home/pi/selector_sistemas.ini)
+if [ "$sistema5" = 'SOLOFUSION=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelSolofusion &
+fi
+
+sistema10=$(awk "NR==5" /home/pi/selector_sistemas.ini)
+if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDstar &
+fi
+
 
 # path usuario 
 usuario="/home/pi"
