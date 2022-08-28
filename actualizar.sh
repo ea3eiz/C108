@@ -23,6 +23,12 @@ cd /home/pi/B108
 ./qt_OpenPanelBM &
 fi
 
+sistema_bm=$(awk "NR==2" /home/pi/selector_sistemas.ini)
+if [ "$sistema_bm" = 'DMR=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDMRPLUS &
+fi
+
 # path usuario 
 usuario="/home/pi"
 usuario="$usuario"
