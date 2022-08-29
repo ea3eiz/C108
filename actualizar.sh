@@ -57,6 +57,12 @@ cd /home/pi/B108
 fi
 
 
+sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
+if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelAmbeSever &
+fi
+
 # path usuario 
 usuario="/home/pi"
 usuario="$usuario"
