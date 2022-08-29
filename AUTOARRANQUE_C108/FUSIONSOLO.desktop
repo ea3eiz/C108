@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Abrir solo FUSION
+Name[es_ES]=SOLOFUSION
+Comment=
+Exec=sh -c "cd /home/pi/A108/;sleep 15;lxterminal --geometry=88x19 -e sudo sh ejecutar_solofusion.sh"
+Icon=/home/pi/A108/SOLO_YSF.png
+Terminal=false
+StartupNotify=false
+Path=
+Hidden=false
+

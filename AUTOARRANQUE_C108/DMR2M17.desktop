@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c 'cd /home/pi/A108;sleep 20;sudo sh ejecutar_DMR2M17.sh'
+Icon=/home/pi/A108/ICONO_M17_OFF.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=DMR2M17
+Hidden=false
+Comment[es_ES]=EA3EIZ
