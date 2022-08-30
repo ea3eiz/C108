@@ -17,12 +17,6 @@ sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
 fi
 
-sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
-if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
-cd /home/pi/B108
-./qt_OpenPanelAmbeServer &
-fi
-
 sistema1=$(awk "NR==1" /home/pi/selector_sistemas.ini)
 if [ "$sistema1" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
@@ -56,12 +50,29 @@ cd /home/pi/B108
 ./qt_OpenPanelSolofusion &
 fi
 
-sistema10=$(awk "NR==5" /home/pi/selector_sistemas.ini)
-if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
+sistema6=$(awk "NR==6" /home/pi/selector_sistemas.ini)
+if [ "$sistema6" = 'YSF2DMR=CHECK_ON' ];then
 cd /home/pi/B108
-./qt_OpenPanelDstar &
+./qt_OpenPanelYsf2dmr &
 fi
 
+sistema7=$(awk "NR==7" /home/pi/selector_sistemas.ini)
+if [ "$sistema7" = 'DMR2YSF=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2ysf &
+fi
+
+sistema8=$(awk "NR==8" /home/pi/selector_sistemas.ini)
+if [ "$sistema8" = 'DMR2NXND=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2Nxdn &
+fi
+
+sistema9=$(awk "NR==9" /home/pi/selector_sistemas.ini)
+if [ "$sistema9" = 'IRCDDB=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelIrcddb &
+fi
 
 sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
 if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
@@ -69,7 +80,41 @@ cd /home/pi/B108
 ./qt_OpenPanelDstar
 fi
 
+sistema11=$(awk "NR==11" /home/pi/selector_sistemas.ini)
+if [ "$sistema11" = 'DMRGATEWAY=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmrgateway
+fi
 
+sistema12=$(awk "NR==12" /home/pi/selector_sistemas.ini)
+if [ "$sistema12" = 'NXDN=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelNxdn
+fi
+
+sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
+if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2M17
+fi
+
+sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
+if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2M17
+fi
+
+sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
+if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelAmbeServer &
+fi
+
+sistema15=$(awk "NR==15" /home/pi/selector_sistemas.ini)
+if [ "$sistema15" = 'M17=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelM17 &
+fi
 
 # path usuario 
 usuario="/home/pi"
