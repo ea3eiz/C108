@@ -56,11 +56,17 @@ cd /home/pi/B108
 ./qt_OpenPanelDstar &
 fi
 
+sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
+if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDstar
+fi
+
 
 sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
 if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
 cd /home/pi/B108
-./qt_OpenPanelAmbeSever &
+./qt_OpenPanelAmbeServer &
 fi
 
 # path usuario 
