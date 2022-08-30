@@ -19,11 +19,11 @@ fi
 
 
 
-sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
-if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
-cd /home/pi/B108
-./qt_OpenPanelAmbeServer &
-fi
+#sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
+#if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
+#cd /home/pi/B108
+#./qt_OpenPanelAmbeServer &
+#fi
 
 sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
 if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
