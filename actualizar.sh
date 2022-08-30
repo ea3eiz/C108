@@ -69,7 +69,7 @@ fi
 sistema9=$(awk "NR==9" /home/pi/selector_sistemas.ini)
 if [ "$sistema9" = 'IRCDDB=CHECK_ON' ];then
 cd /home/pi/B108
-./qt_OpenPanelIrcddb &
+./qt_OpenPanelIrcddb
 fi
 
 sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
