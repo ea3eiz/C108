@@ -22,43 +22,43 @@ if [ "$sistema1" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelBM &
 fi
-sleep 1
+sleep 3
 sistema2=$(awk "NR==2" /home/pi/selector_sistemas.ini)
 if [ "$sistema2" = 'DMR=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDMRPLUS &
 fi
-sleep 1
+sleep 3
 sistema3=$(awk "NR==3" /home/pi/selector_sistemas.ini)
 if [ "$sistema3" = 'RADIO=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelRadio &
 fi
-sleep 1
+sleep 3
 sistema4=$(awk "NR==4" /home/pi/selector_sistemas.ini)
 if [ "$sistema4" = 'ESPECIAL=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelEspecial &
 fi
-sleep 1
+sleep 3
 sistema5=$(awk "NR==5" /home/pi/selector_sistemas.ini)
 if [ "$sistema5" = 'SOLOFUSION=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelSolofusion &
 fi
-sleep 1
+sleep 3
 sistema6=$(awk "NR==6" /home/pi/selector_sistemas.ini)
 if [ "$sistema6" = 'YSF2DMR=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelYsf2dmr &
 fi
-sleep 1
+sleep 3
 sistema7=$(awk "NR==7" /home/pi/selector_sistemas.ini)
 if [ "$sistema7" = 'DMR2YSF=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2ysf &
 fi
-sleep 1
+sleep 3
 sistema8=$(awk "NR==8" /home/pi/selector_sistemas.ini)
 if [ "$sistema8" = 'DMR2NXND=CHECK_ON' ];then
 cd /home/pi/B108
@@ -70,44 +70,44 @@ if [ "$sistema9" = 'IRCDDB=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelIrcddb &
 fi
-sleep 1
+sleep 3
 sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
 if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDstar
 fi
-sleep 1
+sleep 3
 sleep 2
 sistema11=$(awk "NR==11" /home/pi/selector_sistemas.ini)
 if [ "$sistema11" = 'DMRGATEWAY=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmrgateway
 fi
-sleep 1
+sleep 3
 sistema12=$(awk "NR==12" /home/pi/selector_sistemas.ini)
 if [ "$sistema12" = 'NXDN=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelNxdn
 fi
-sleep 1
+sleep 3
 sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
 if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2M17
 fi
-sleep 1
+sleep 3
 sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
 if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2M17
 fi
-sleep 1
+sleep 3
 sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
 if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelAmbeServer &
 fi
-sleep 1
+sleep 3
 sistema15=$(awk "NR==15" /home/pi/selector_sistemas.ini)
 if [ "$sistema15" = 'M17=CHECK_ON' ];then
 cd /home/pi/B108
@@ -263,7 +263,7 @@ sudo sleep 0.5
 sudo echo 0 > /sys/class/gpio/gpio20/value
 sudo echo 0 > /sys/class/gpio/gpio21/value
 sudo echo 1 > /sys/class/gpio/gpio21/value
-sudo sleep 1
+sudo sleep 3
 sudo echo 0 > /sys/class/gpio/gpio20/value
 sudo echo 1 > /sys/class/gpio/gpio20/value
 sudo sleep 0.5
