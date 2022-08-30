@@ -54,24 +54,24 @@ cd /home/pi/B108
 ./qt_OpenPanelYsf2dmr &
 fi
 
-#sistema7=$(awk "NR==7" /home/pi/selector_sistemas.ini)
-#if [ "$sistema7" = 'DMR2YSF=CHECK_ON' ];then
-#cd /home/pi/B108
-#./qt_OpenPanelDmr2ysf &
-#fi
-#
-#sistema8=$(awk "NR==8" /home/pi/selector_sistemas.ini)
-#if [ "$sistema8" = 'DMR2NXND=CHECK_ON' ];then
-#cd /home/pi/B108
-#./qt_OpenPanelDmr2Nxdn &
-#fi
-#
-#sistema9=$(awk "NR==9" /home/pi/selector_sistemas.ini)
-#if [ "$sistema9" = 'IRCDDB=CHECK_ON' ];then
-#cd /home/pi/B108
-#./qt_OpenPanelIrcddb &
-#fi
-#
+sistema7=$(awk "NR==7" /home/pi/selector_sistemas.ini)
+if [ "$sistema7" = 'DMR2YSF=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2ysf &
+fi
+
+sistema8=$(awk "NR==8" /home/pi/selector_sistemas.ini)
+if [ "$sistema8" = 'DMR2NXND=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDmr2Nxdn &
+fi
+
+sistema9=$(awk "NR==9" /home/pi/selector_sistemas.ini)
+if [ "$sistema9" = 'IRCDDB=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelIrcddb &
+fi
+
 sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
 if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
 cd /home/pi/B108
@@ -91,7 +91,8 @@ cd /home/pi/B108
 fi
 
 sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
-if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
+if [ "$sistema13" = 'DMR2M17=CHECK_ON' ]
+then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2M17
 fi
