@@ -72,11 +72,11 @@ fi
 #./qt_OpenPanelIrcddb &
 #fi
 #
-#sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
-#if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
-#cd /home/pi/B108
-#./qt_OpenPanelDstar
-#fi
+sistema10=$(awk "NR==10" /home/pi/selector_sistemas.ini)
+if [ "$sistema10" = 'SOLODSTAR=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelDstar
+fi
 
 sistema11=$(awk "NR==11" /home/pi/selector_sistemas.ini)
 if [ "$sistema11" = 'DMRGATEWAY=CHECK_ON' ];then
