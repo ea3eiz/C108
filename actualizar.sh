@@ -17,6 +17,21 @@ sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
 fi
 
+
+
+sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
+if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelAmbeServer &
+fi
+
+sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
+if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
+cd /home/pi/B108
+./qt_OpenPanelAmbeServer &
+fi
+
+
 sistema1=$(awk "NR==1" /home/pi/selector_sistemas.ini)
 if [ "$sistema1" = 'BM=CHECK_ON' ];then
 cd /home/pi/B108
@@ -63,12 +78,7 @@ cd /home/pi/B108
 ./qt_OpenPanelDstar
 fi
 
-sleep 3
-sistema14=$(awk "NR==14" /home/pi/selector_sistemas.ini)
-if [ "$sistema14" = 'AMBE=CHECK_ON' ];then
-cd /home/pi/B108
-./qt_OpenPanelAmbeServer &
-fi
+
 
 # path usuario 
 usuario="/home/pi"
