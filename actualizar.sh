@@ -61,7 +61,7 @@ cd /home/pi/B108
 fi
 
 sistema8=$(awk "NR==8" /home/pi/selector_sistemas.ini)
-if [ "$sistema8" = 'DMR2NXND=CHECK_ON' ];then
+if [ "$sistema8" = 'DMR2NXDN=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2Nxdn &
 fi
@@ -91,8 +91,7 @@ cd /home/pi/B108
 fi
 
 sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
-if [[ "$sistema13" = 'DMR2M17=CHECK_ON' ]]
-then
+if [ "$sistema13" = 'DMR2M17=CHECK_ON' ];then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2M17
 fi
