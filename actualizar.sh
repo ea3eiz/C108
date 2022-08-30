@@ -91,7 +91,7 @@ cd /home/pi/B108
 fi
 
 sistema13=$(awk "NR==13" /home/pi/selector_sistemas.ini)
-if [ "$sistema13" = 'DMR2M17=CHECK_ON' ]
+if [[ "$sistema13" = 'DMR2M17=CHECK_ON' ]]
 then
 cd /home/pi/B108
 ./qt_OpenPanelDmr2M17
