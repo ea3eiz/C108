@@ -10,4 +10,6 @@
                         sudo chmod 777 -R B108
                         cd /home/pi/B108
                         ./qt_imagen_actualizada
+                        cd /home/pi
+                        sudo rm DMR2NXDN_EDITOR_NEW
 
